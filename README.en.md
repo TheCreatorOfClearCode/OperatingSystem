@@ -44,8 +44,8 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/TheCreatorOfClearCode/OperatingSystem.git
-   cd OperatingSystem
+   git clone https://github.com/TheCreatorOfClearCode/OperatingSystem-by-TheCreatorOfClearCode.git
+   cd OperatingSystem-by-TheCreatorOfClearCode
 2. 
     ```bash
     make
