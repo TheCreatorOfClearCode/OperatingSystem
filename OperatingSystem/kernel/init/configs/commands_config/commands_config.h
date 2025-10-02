@@ -8,5 +8,5 @@ typedef struct
     command_func_t init;
 } CommandsConfig;
 
-extern CommandsConfig commands[];
-extern int commands_count;
+extern CommandsConfig command_modules[];
+extern int command_modules_count;

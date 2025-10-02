@@ -2,16 +2,17 @@
 #include "../../kernel/drivers/VGA/vga.h"
 #include "../../libraries/string/string.h"
 
-#define MAX_COMMANDS 16
-static Command commands[MAX_COMMANDS];
-static size_t command_count = 0;
+#define MAX_COMMANDS 32
+Command commands[MAX_COMMANDS];
+size_t command_count = 0;
 
-void register_command(const char *name, void (*func)(const char *args))
+void register_command(const char *name, void (*func)(const char *args), const char *description)
 {
     if (command_count < MAX_COMMANDS)
     {
         commands[command_count].name = name;
         commands[command_count].func = func;
+        commands[command_count].description = description;
         command_count++;
     }
 }

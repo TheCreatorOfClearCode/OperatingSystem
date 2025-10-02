@@ -4,11 +4,15 @@
 extern void about_init();
 extern void help_init();
 extern void clear_init();
+extern void poweroff_init();
+extern void reboot_init();
 
-CommandsConfig commands[] = {
+CommandsConfig command_modules[] = {
     {"Command: about", about_init},
     {"Command: help", help_init},
-    {"Command: clear", clear_init}
+    {"Command: clear", clear_init},
+    {"Command: poweroff", poweroff_init},
+    {"Commands: reboot", reboot_init}
 };
 
-int commands_count = sizeof(commands) / sizeof(commands[0]);
+int command_modules_count = sizeof(command_modules) / sizeof(command_modules[0]);

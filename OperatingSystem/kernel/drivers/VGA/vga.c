@@ -133,6 +133,5 @@ void vga_write_color(const char *s, uint8_t fg, uint8_t bg)
 void vga_init()
 {
     vga_setcolor(COLOR_LIGHT_GREY, COLOR_BLACK);
-    vga_clear();
     vga_enable_cursor(14, 15);
 }

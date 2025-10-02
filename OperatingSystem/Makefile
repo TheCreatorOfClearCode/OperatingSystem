@@ -1,5 +1,5 @@
 TARGET = kernel.bin
-ISO = OperatingSystem.iso
+ISO = OperatingSystem-v1.1-by-TheCreatorOfClearCode.iso
 CC = gcc
 CFLAGS = -m32 -ffreestanding -nostdlib -fno-builtin -fno-stack-protector -Wall -Wextra
 ASM = nasm
@@ -18,6 +18,8 @@ OBJS = \
 	commands/about.o \
 	commands/help.o  \
 	commands/clear.o \
+	commands/poweroff.o \
+	commands/reboot.o \
 	libraries/string/string.o 
 
 all: $(ISO)
@@ -34,15 +36,11 @@ $(TARGET): $(OBJS)
 $(ISO): $(TARGET)
 	mkdir -p iso/boot/grub
 	cp $(TARGET) iso/boot/kernel.bin
-	echo 'set timeout=10' > iso/boot/grub/grub.cfg
-	echo 'set default=0' >> iso/boot/grub/grub.cfg
-	echo 'menuentry "Start OperatingSystem by TheCreatorOfClearCode" {' >> iso/boot/grub/grub.cfg
-	echo '  echo "Starting OperatingSystem..."' >> iso/boot/grub/grub.cfg
-	echo '  echo "Loading kernel..."' >> iso/boot/grub/grub.cfg
-	echo '  multiboot /boot/kernel.bin' >> iso/boot/grub/grub.cfg
-	echo '  echo "Booting..."' >> iso/boot/grub/grub.cfg
-	echo '  boot' >> iso/boot/grub/grub.cfg
-	echo '}' >> iso/boot/grub/grub.cfg
+	@if [ ! -f boot/grub/grub.cfg ]; then \
+		echo "Error: boot/grub/grub.cfg not found!"; \
+		exit 1; \
+	fi
+	cp boot/grub/grub.cfg iso/boot/grub/grub.cfg
 	grub-mkrescue -o $(ISO) iso -d /usr/lib/grub/i386-pc
 
 clean:

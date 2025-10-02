@@ -5,10 +5,16 @@
 
 void kernel_main()
 {
-    vga_write("Starting drivers...");
+    vga_write_color("=== Starting system... ===\n", COLOR_LIGHT_GREEN, COLOR_BLACK);
+
+    vga_write_color("=> Starting drivers...\n", COLOR_LIGHT_CYAN, COLOR_BLACK);
     start_drivers();
-    vga_write("Starting modules...");
+    vga_write_color("=> Drivers initialized\n\n", COLOR_LIGHT_GREEN, COLOR_BLACK);
+
+    vga_write_color("=> Starting command modules...\n", COLOR_LIGHT_CYAN, COLOR_BLACK);
     start_commands();
-    vga_write("Starting shell...");
+    vga_write_color("=> Command modules initialized\n\n", COLOR_LIGHT_GREEN, COLOR_BLACK);
+
+    vga_write_color("=> Starting shell...\n", COLOR_LIGHT_CYAN, COLOR_BLACK);
     shell_run();
 }
