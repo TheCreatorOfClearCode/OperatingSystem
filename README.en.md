@@ -46,7 +46,7 @@
    ```bash
    git clone https://github.com/TheCreatorOfClearCode/OperatingSystem-by-TheCreatorOfClearCode.git
    cd OperatingSystem-by-TheCreatorOfClearCode
-2. 
+2. Build the project:
     ```bash
     make
     ```
