@@ -4,7 +4,7 @@
 
 # 🌌 OperatingSystem by TheCreatorOfClearCode
 
-**OperatingSystem by TheCreatorOfClearCode** is a minimalist operating system written in C**.
+**OperatingSystem by TheCreatorOfClearCode** is a minimalist operating system written in C.
 
 ---
 
@@ -44,8 +44,8 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/TheCreatorOfClearCode/OperatingSystem-by-TheCreatorOfClearCode.git
-   cd OperatingSystem-by-TheCreatorOfClearCode
+   git clone https://github.com/TheCreatorOfClearCode/OperatingSystem.git
+   cd OperatingSystem
 2. 
     ```bash
     make
