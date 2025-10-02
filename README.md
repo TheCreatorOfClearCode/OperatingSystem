@@ -16,6 +16,7 @@
 ---
 
 **⬇️ [Скачать](https://github.com/TheCreatorOfClearCode/OperatingSystem/releases/tag/v1.0)**
+
 **Ознакомтесь с [журналом изменений](CHANGELOG.md)**
 
 ---
