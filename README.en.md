@@ -17,6 +17,8 @@
 
 **⬇️ [Download](https://github.com/TheCreatorOfClearCode/OperatingSystem/releases/tag/v1.0)**
 
+**Check out the [changelog](CHANGELOG.en.md)**
+
 ---
 
 ## 📸 Screenshots
