@@ -44,8 +44,8 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/TheCreatorOfClearCode/OperatingSystem-by-TheCreatorOfClearCode.git
-   cd OperatingSystem-by-TheCreatorOfClearCode
+   git clone https://github.com/TheCreatorOfClearCode/OperatingSystem.git
+   cd OperatingSystem
 2. 
     ```bash
    make
