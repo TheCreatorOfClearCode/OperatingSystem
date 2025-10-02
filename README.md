@@ -4,7 +4,7 @@
 
 # 🌌 OperatingSystem by TheCreatorOfClearCode
 
-**OperatingSystem by TheCreatorOfClearCode** — минималистичная операционная система, написанная на C.  
+**OperatingSystem by TheCreatorOfClearCode** — минималистичная операционная система, написанная на **C**.  
 
 ---
 
