@@ -4,7 +4,7 @@
 
 # 🌌 OperatingSystem by TheCreatorOfClearCode
 
-**OperatingSystem by TheCreatorOfClearCode** is a minimalist operating system written in C.
+**OperatingSystem by TheCreatorOfClearCode** is a minimalist operating system written in **C**.
 
 ---
 
