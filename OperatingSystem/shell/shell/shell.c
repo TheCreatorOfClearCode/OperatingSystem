@@ -7,7 +7,6 @@ void shell_run()
 {
     char buf[128];
 
-    vga_clear();
     vga_write_color("Welcome!\n", COLOR_GREEN, COLOR_BLACK);
     vga_putc('\n');
 

@@ -15,7 +15,7 @@
 
 ---
 
-**⬇️ [Download](https://github.com/TheCreatorOfClearCode/OperatingSystem-by-TheCreatorOfClearCode/releases/tag/v1.1)**
+**⬇️ [Download](https://github.com/TheCreatorOfClearCode/OperatingSystem-by-TheCreatorOfClearCode/releases/tag/v1.2)**
 
 **Check out the [changelog](CHANGELOG.en.md)**
 

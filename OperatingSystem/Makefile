@@ -1,5 +1,5 @@
 TARGET = kernel.bin
-ISO = OperatingSystem-v1.1-by-TheCreatorOfClearCode.iso
+ISO = OperatingSystem-v1.2-by-TheCreatorOfClearCode.iso
 CC = gcc
 CFLAGS = -m32 -ffreestanding -nostdlib -fno-builtin -fno-stack-protector -Wall -Wextra
 ASM = nasm
@@ -9,6 +9,7 @@ OBJS = \
 	kernel/kernel.o \
 	kernel/drivers/VGA/vga.o \
 	kernel/drivers/keyboard/keyboard.o \
+	kernel/drivers/RTC/rtc.o \
 	kernel/init/start_drivers/start_drivers.o \
     kernel/init/start_commands/start_commands.o \
     kernel/init/configs/drivers_config/drivers_config.o \
@@ -20,6 +21,7 @@ OBJS = \
 	commands/clear.o \
 	commands/poweroff.o \
 	commands/reboot.o \
+	commands/datetime.o \
 	libraries/string/string.o 
 
 all: $(ISO)
